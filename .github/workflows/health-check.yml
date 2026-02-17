@@ -51,8 +51,11 @@ jobs:
         id: metrics
         env:
           SOURCES: |
-            GitHub->https://github.com
-            Facebook->https://facebook.com
+            Opentext AS2A->http://as2.am.gxsics.com:80/enterprise/as2
+            Opentext AS2B->http://as2b.am.gxsics.com/enterprise/as2
+            Opentext AS2E->http://as2.eu.gxsics.com:80/enterprise/as2
+            Opentext AS2 BIZ->https://as2bizlinkp12.tgms.gxs.com/ipnet/as2
+            Opentext AS2 BIZ DANONE->https://as2bizlinkpdn.opentext.cloud/ipnet/as2
           GITHUB_TOKEN: ${{ github.token }}
           JOB_NAME: ${{ github.workflow }}
           ARTIFACT_NAME: ${{ env.ARTIFACT_NAME }}
